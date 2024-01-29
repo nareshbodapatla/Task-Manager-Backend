@@ -8,10 +8,7 @@ import Routes from './routes/route.js';
 const app = express();
 
 
-app.use(cors({
-  origin :["http://localhost:3000",
-"https://task-manager-bnk-app.onrender.com"]
-}));
+app.use(cors());
 
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }))
